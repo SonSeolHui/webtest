@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <tittle>멀티미디어 삽입</tittle>
+</head>
+<body>
+  <h1>embed tag로 웹 문서에 PDF삽입하기</h1>
+  <embed src="product.pdf">
+    <!--'embed' tag don't need end tag-->
+    <hr>
+  <h1>using 'object tag' to insert media</h1>
+  <object width="500" height="600" data="product.pdf"></object>
+  <!--*Warning* when using 'object' tag, must insert 'data' tag at last -->
+    <hr>
+  <h1>insert audio/video(using embed)</h1>
+  <embed src="medias/spring.mp3">
+  <embed src="medias/flight.mp4">
+    <hr>
+  <h1>insert audio/video(using object)</h1>
+  <object width="200" height="100" data="medias/spring.mp3"></object>
+  <object width="400" height="300" data="medias/flight.mp4"></object>
+</body>
+</html>
